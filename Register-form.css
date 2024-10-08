@@ -1,0 +1,219 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+} 
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(istockphoto-869368524-612x612.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    padding: 40px;
+    height: 730px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+
+h2{
+    color: #f0ffff;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+
+.name-area{
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    width: 100%;
+}
+.form,
+.emial-container{
+    position: relative;
+    width: 100%;
+}
+
+.emial-container{
+    margin-top: 35px;
+}
+
+.textbox,
+.e-box{
+    outline: none;
+    width: 100%;
+    height: 40px;
+    padding: 5px 8px 6px 8px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #f0ffff;
+    background-color: white;
+}
+
+.e-box{
+    width: 100%;
+}
+.form-lable{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    cursor: text;
+    font-size: 14px;
+    transition: 0.3s;
+    height: 15px;    
+}
+
+/* .textbox:focus ~ .form-lable{
+    top: -8px;
+    font-size: 13px;
+    color: greenyellow;  
+    background: rgb(152, 151, 151);
+}
+.e-box:focus ~ .form-lable{
+    top: -8px;
+    font-size: 13px;
+    color: greenyellow;  
+    background: rgb(152, 151, 151);
+} */
+
+
+
+/* password area */
+
+.password-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    column-gap: 24px;
+}
+
+.password,
+.c-password{
+   width: 100%;
+}
+.password input,
+.c-password input{
+   width: 100%;
+   height: 40px;
+   border-radius: 7px;
+   outline: none;
+   border: none;
+   padding: 0 10px 0 10px;
+}
+
+.password label{
+   line-height: 35px;
+   color: #f0ffff;
+}
+.c-password label{
+    line-height: 35px;
+    color: #f0ffff;
+ }
+
+
+/* mo.no or date of birth */
+
+.contact{
+    display: flex;
+    margin-top: 25px;
+    column-gap: 24px;
+}
+.ph-no,
+.birth{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+}
+.contact input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 0 10px 0 10px;
+
+}
+
+
+/* gender */
+.gender{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #f0ffff;
+}
+
+.contact label,
+.gender label{
+    color: #f0ffff;
+    line-height: 35px;
+}
+
+
+
+/* buttons */
+
+.reset,
+.register{
+    width: 100%;
+    background-color: #f0ffff;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 18px;
+}
+
+.reset button,
+.register button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    color: #f0ffff;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+.register button{
+    background-color: rgb(29, 184, 5);
+}
+.reset button{
+    background-color: deepskyblue;
+}
+.register button:hover,
+.reset button:hover{
+    opacity: 0.8;
+}
+.register button:active,
+.reset button:active{
+    opacity: 0.6;
+}
+
+
+
+.alredy-account{
+    display: flex;
+    justify-content: center;
+    color: #f0ffff;
+    margin-top: 30px;
+}
+.login-link a{
+    text-decoration: none;
+    color: rgb(30, 30, 211);
+}
+.login-link a:hover{
+    text-decoration: underline;
+}
+.login-link a:active{
+    opacity: 0.7;
+}
