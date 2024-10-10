@@ -17,12 +17,14 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    width: 680px;
+    width: 560px;
     padding: 40px;
-    height: 730px;
+    height: 720px;
     background: transparent;
     backdrop-filter: blur(20px);
     border-radius: 20px;
+    border: 2px solid white;
+
 }
 
 h2{
@@ -216,4 +218,17 @@ h2{
 }
 .login-link a:active{
     opacity: 0.7;
+}
+
+@media screen and (max-width: 431px) {
+    body{
+        height: 100vh;
+
+    }
+    .container{
+        margin-inline: 18px;
+    }
+    .container .lable{
+        font-size: 0.8rem;
+    }
 }
